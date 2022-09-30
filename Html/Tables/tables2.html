@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables 2</title>
+    <style>
+        table,tr,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+            
+        }
+        tr:nth-child(even){
+            background-color: antiquewhite;
+        }
+        tr:hover{
+            background-color: aqua;
+            color:salmon;
+        
+        }
+        th{
+            background-color: lightgray;
+        }
+        button{
+            border-radius: 20%;
+        
+        }
+        button:hover{
+            background-color: gray;
+            color: white;
+        }
+       
+        
+
+
+
+    </style>
+</head>
+<body>
+    <table>
+       
+        <thead>
+            <tr>
+                <th>NUMBER</th>
+                <th>NAME</th>
+                <th>SURNAME</th>
+                <th>AGE</th>
+                <th>SELECT</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>MERVE</td>
+                <td>COSKUN</td>
+                <td>35</td>
+                <td><button>DELETE</button></td>
+                
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>DENIZ</td>
+                <td>COSKUN</td>
+                <td>38</td>
+                <td><button>DELETE</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>DERIN</td>
+                <td>COSKUN</td>
+                <td>6</td>
+                <td><button>DELETE</button></td>
+            </tr>
+
+
+
+
+        </tbody>
+
+
+
+
+
+    </table>
+    
+</body>
+</html>

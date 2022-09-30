@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <article>
+        <h2>Contact Me!</h2>
+    <form>
+       <fieldset>
+        <legend>Personal Info</legend>
+        <p>
+            <label for="first name" >First Name:</label>
+            <input type="text" name="first name" id="first name" placeholder="First Name">
+        </p>
+        <p>
+            <label for="last name">Last Name:</label>
+            <input type="text" name="first name" id="first name" placeholder="Last Name">
+        </p>
+        <p>
+            <label for="tel">Telefon No:</label>
+            <input type="tel" id="tel" placeholder="Telefon No">
+        </p>
+        <p>
+            <label for="email">e-mail to :</label>
+            <input type="email" name="email" id="email" placeholder="e-Mail">
+        </p>
+        <p>
+            <label for="password">Password : </label>
+            <input type="password" name="password" id="password" placeholder="Password">
+        </p>
+        <p>
+            Gender: 
+            <label for="Gender">Male</label>
+            <input type="radio" name="Gender" value="male">
+            <label for="Gender">Female</label>
+            <input type="radio" name="Gender" value="female"checked>
+            <label for="Gender">Other</label>
+            <input type="radio" name="Gender" value="other">
+        </p>
+        <p>
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date">
+        </p>
+        <p>
+            Hobbies:
+            <label for="tech">Technology</label>     
+            <input type="checkbox" name="tech" checked>
+            <label for="Music">Music</label>
+            <input type="checkbox" name="Music" >
+            <label for="Art">Art</label>
+            <input type="checkbox" name="Art" >
+            
+        </p>
+        Degree: <br>
+        <select name="degree" id="degree">
+            <option value="bacholor">Bacholor</option>
+            <option value="msc">Master of Science</option>
+            <option value="phd" selected>Phd</option>
+        </select>
+        <p>
+            <label for="file">Select a File:</label> <br>
+            <input type="file" name="file" placeholder="select a file">
+        </p>
+        <p>
+            Write a message: <br>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+        </p>
+        <p>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </p>
+
+            
+
+
+
+
+      
+
+
+
+       </fieldset>
+    </form>
+</article>
+    
+</body>
+</html>
