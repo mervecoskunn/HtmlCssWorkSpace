@@ -1,0 +1,50 @@
+* , *::before , *::after{
+    box-sizing: border-box;
+
+}
+.mycheckbox{
+    position: absolute;
+    opacity: 0;
+    left: -99999px;
+    
+}
+.mycheckbox + label{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.mycheckbox + label::before{
+    content: " ";
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-block;
+    border-radius: .2em ;
+    border: .05em solid black;
+    margin-right: 0.5em;
+}
+.mycheckbox + label:hover::before{
+    background-color: lightblue;
+
+}
+.mycheckbox:focus + label::before{
+    box-shadow: 0 0 20px blue;
+}
+.mycheckbox:checked +label::before{
+   content:"\2713" ;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   background-color: blue;
+
+}
+.mycheckbox:disabled +label::before{
+    background-color: #ccc;
+    border-color: #999;
+
+}
+.mycheckbox:disabled +label{
+    color:#ccc;
+    cursor: not-allowed;
+
+}

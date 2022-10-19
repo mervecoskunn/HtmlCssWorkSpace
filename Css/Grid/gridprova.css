@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3,200px);
+    grid-template-areas: "header header header header header header"
+                        "aside main main main main main"
+                        "aside item1 item1 item1 item1 item2"  
+}
+.header{
+    background-color: orangered;
+    grid-area: header;
+
+}
+.aside{
+    background-color: yellow;
+    grid-area: aside;
+
+}
+.main{
+    background-color: greenyellow;
+    grid-area: main;
+
+}
+.item1{
+    background-color: cadetblue;
+    grid-area: item1;
+
+}
+.item2{
+    background-color: blueviolet;
+    grid-area: item2;
+
+}

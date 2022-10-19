@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color:#ADBCA5;
+    display: flex;
+    align-items: center;
+}
+#logo{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    flex-grow: 1;
+    color: #E09891;
+}
+.menu{
+    flex-grow: 3;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+.menu ul li{
+    list-style-type: none;
+    display: flex;
+}
+.menu ul li a{
+    text-decoration: none;
+    color:#8C5F66;
+    font-size: 2rem;
+}
+.menu ul li a:hover{
+    background-color: #CB769E;
+    color:#7c9370 ;
+}
+.top-main{
+   background-color:#ccc ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-text{
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+}
+.main-text h2{
+   padding-top: 4rem;
+   padding-bottom: 0.5rem;
+   font-size: 2.5rem;
+   color:#CB769E;
+
+}
+.main-text p{
+    line-height: 4rem;
+    padding: 10% 0;
+    font-size: 2rem;
+    color:#7c9370;
+}
+.second-container{
+    background-color: #CB769E;
+    display: flex;
+
+
+}
+.item{
+    flex-grow: 1;
+    padding: 5%;
+    line-height: 2.5rem;
+    font-size: 1.7rem;
+    ;
+
+}
+.item h2{
+    padding-left: 10%;
+    padding-bottom: 3rem;
+    color: #8C5F66;
+}
+.item p{
+    line-height: 3rem;
+    flex-grow: 2;
+}
+.contact-form{
+background-color: #ccc;
+height: 300px;
+}
+.contact-form h2{
+    text-align: center;
+    color: #7c9370;
+    font-size: 3rem;
+    padding: 1rem;
+
+}
+.form-items{
+    display: flex;
+    flex-direction: column;
+    background-color:#E09891;
+    padding: 3rem;
+    margin: auto;
+}
+.form-items input,textarea{
+   border-radius: .5rem;
+   height: 3rem;
+   width: 50%;
+   margin:auto;
+   margin-bottom: 2rem;
+   padding: 1rem;
+   border: 1px solid #E09891;
+  
+}
+.form-items button{
+    background-color:#7c9370;
+    color: beige;
+    font-size: 1rem;
+    width: 15%;
+    margin: auto;
+    text-transform: uppercase;
+    padding: 2%;
+    border-radius: 5rem;
+    outline:none;
+    border: 1px solid #7c9370;
+}
+@media all and (max-width:600px){
+    .header{
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu ul{
+        flex-direction: column;
+        margin-top: 1rem;
+    
+    }
+    .menu ul li{
+        padding: .5rem;
+    }
+    .main-text h2{
+        font-size:2rem;
+    }
+    .main-text p{
+        font-size:1.2rem;
+        line-height: 4rem;
+        padding: 1rem 0;
+        color:#7c9370;
+    }
+    .top-main{
+        background-color: azure;
+    }
+    .second-container{
+        background-color: #CB769E;
+        flex-direction: column;
+        padding: 2%;
+}
+.form-items button{
+    font-size: .5rem;
+}
+@media(max-width:1440px){
+
+}
+
+}

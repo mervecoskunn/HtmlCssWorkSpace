@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 60px;
+            width: 60px;
+            display:inline-block;
+            /* display: none inline inline-block block ; */
+        }
+        #first{
+            background-color:red;
+        }
+        #second{
+            background-color:yellow;
+            display: none;/*we cannot see this item.*/
+            /*or*/
+            visibility: hidden;/* we cannot see this item but we can see available place for second item.*/
+        
+        }
+        #third{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    
+        <div class="box" id="first">Merve</div>
+        <div class="box" id="second">Merve</div>
+        <div class="box" id="third">Merve</div>
+    </div>
+    
+</body>
+</html>

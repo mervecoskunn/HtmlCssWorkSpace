@@ -1,0 +1,103 @@
+html, body{
+    background-color: black;
+    margin: 10px;
+}
+/* .container4{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    grid-template-rows: repeat(2,100px);
+    grid-auto-rows: 100px;
+    height: 600px;
+    border: 2px solid red;
+    justify-content: start;
+    align-content: start;
+    align-items: stretch;
+
+} */
+ 
+ /* .container2{
+    display: grid;
+    gap: 3px;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 40px 240px 40px;
+
+}
+.header{
+     grid-column-start: 1;
+    grid-column-end: 13;  /*they have 12 parts*/
+    /* grid-column: 1/-1;
+ } 
+.footer{
+    grid-column: 1/-1;
+
+} 
+.menu{
+    grid-column: 1/6;
+    
+    
+} 
+.content{
+    grid-column: 6/13;
+
+}  */
+ .container1{
+    text-align: center;
+    font-size: 2em;
+    color: #ffeead;
+    display: grid;
+    grid-template-columns: repeat(3,2fr); 
+    /* grid-template-columns: 100px 100px 100px; */
+    /* grid-template-columns:100px 100px 100px --->grid-temp-colums:repeat(3,100px)*/
+     grid-template-rows: 100px 200px; 
+    /* we can use fr example; 1fr, 2fr fr is responsive.*/
+     column-gap: 10px;
+    row-gap: 10px;
+    /* or gap:10px;*/
+
+ }
+.container div:nth-child(1n){
+    background-color: #96ceb4;
+
+}
+.container div:nth-child(3n){
+    background-color:#88d8b0;
+
+}
+.container div:nth-child(2n){
+    background-color: #ff6f69;
+
+}
+.container div:nth-child(4n){
+    background-color:#ffcc5c;
+
+}  
+ /* .container3{
+    display: grid;
+    gap: 5px;
+    grid-template-areas: repeat(4,1fr);
+    grid-template-rows: 200px auto 100px;
+    height: 100vh;
+    grid-template-areas:
+    "header header header header"
+    "m content content content"
+    "m f f f";
+    
+
+}
+.header{
+    grid-area: header;
+
+}
+.menu{
+    grid-area: m;
+
+}
+.content{
+    grid-area: content;
+
+}
+.footer{
+    grid-area: f;
+
+}  */
